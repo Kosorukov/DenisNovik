@@ -1,0 +1,314 @@
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url(../fonts/Gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+body {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 943.61px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    padding: 33px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+        text-decoration: none;
+        font-family: "Gilroy-Bold";
+        color: #828282;
+    }
+}
+
+.burger {
+    display: none;
+    margin-right: 28px;
+}
+
+.x {
+    display: none;
+}
+
+.link-home {
+    color: #070707;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.border {
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-bottom: 40px;
+}
+
+.head {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__name {
+        align-self: flex-end;
+        font-family: "Gilroy-Bold";
+        font-size: 47.3392px;
+        line-height: 59px;
+    }
+    &__address {
+        align-self: flex-end;
+    }
+    &__lang {
+        align-self: center;
+        transform: rotate(270deg);
+    }
+    &__photo-image {
+        max-width: 100%;
+        margin-bottom: 104px;
+    }
+    &__photo-image-full {
+        display: none;
+        max-width: 100%;
+        margin-bottom: 104px;
+    }
+}
+
+.about {
+    background: #f6f6f6;
+    text-align: center;
+    &__text {
+        max-width: 485px;
+        margin: 0 auto;
+        padding-bottom: 107px;
+    }
+    &__title {
+        padding-top: 120px;
+        margin-bottom: 18px;
+        font-family: "Gilroy-Bold";
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+.skills {
+    text-align: center;
+    &__title {
+        padding-top: 91px;
+        margin-bottom: 69px;
+        font-family: "Gilroy-Bold";
+        font-size: 34px;
+        line-height: 42px;
+    }
+    &__text {
+        margin-bottom: 84px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item-img {
+        margin-bottom: 25px;
+    }
+    &__item-text {
+        margin-bottom: 41px;
+        flex-grow: 1;
+        font-family: "Gilroy-Bold";
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+    }
+    &__item-raiting {
+        padding-bottom: 110px;
+    }
+}
+
+.skills__item-raiting-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 166px;
+}
+
+.portfolio {
+    background: #f6f6f6;
+    &__title {
+        font-family: "Gilroy-Bold";
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 47px;
+        padding-top: 112px;
+    }
+    &__card {
+        margin-bottom: 99px;
+    }
+    &__card:last-child {
+        margin-bottom: 0px;
+        padding-bottom: 96px;
+    }
+    &__card-img {
+        margin-bottom: 45px;
+    }
+    &__card-text {
+        text-align: center;
+        text-decoration-line: underline;
+    }
+}
+
+.card-img {
+    max-width: 100%;
+}
+
+.footer {
+    text-align: center;
+    &__title {
+        font-family: "Gilroy-Bold";
+        font-size: 34px;
+        line-height: 42px;
+        margin: 114px 0 20px 0;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__button {
+        display: inline-block;
+        margin-bottom: 86px;
+    }
+    &__link {
+        text-decoration: none;
+        padding: 10px 30px 9px 28px;
+        font-family: "Gilroy-Bold";
+        color: #ffffff;
+        background: #070707;
+        border-radius: 20px;
+    }
+    &__row-icons {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-bottom: 46px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__end {
+        font-family: "Gilroy-Medium";
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+        margin-bottom: 123px;
+    }
+}
+
+@media (max-width: 426px) {
+    .head {
+        &__photo-image {
+            max-width: 100%;
+            margin-bottom: 104px;
+            display: none;
+        }
+        &__photo-image-full {
+            display: block;
+            max-width: 100%;
+            margin-bottom: 104px;
+            margin: 0 auto;
+            margin-bottom: 104px;
+        }
+        &__row {
+            flex-direction: column;
+        }
+        &__name {
+            align-self: flex-start;
+            margin-bottom: 23px;
+        }
+        &__address {
+            align-self: flex-start;
+        }
+    }
+    .skills {
+        &__row {
+            flex-direction: column;
+        }
+    }
+    .skills__item-raiting-list {
+        max-width: 166px;
+        margin: 0 auto;
+    }
+    .footer__button {
+        margin-bottom: 48px;
+    }
+    .footer__link {
+        padding: 10px 97px 9px 97px;
+        display: inline-block;
+    }
+    .container-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu {
+        left: -100%;
+        transition: all 0.4s ease;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 66px;
+        background: #ffffff;
+        width: 100%;
+        min-height: 100vh;
+        &__list {
+            margin-bottom: 68px;
+        }
+    }
+    .border {
+        display: none;
+    }
+    .head__lang {
+        display: none;
+    }
+    .burger {
+        display: block;
+        overflow: auto;
+    }
+    .open-menu .b {
+        display: none;
+    }
+    .open-menu .x {
+        display: block;
+    }
+    .menu.open-menu-visible {
+        left: 0;
+        margin-left: 26px;
+    }
+    .fixed-page {
+        overflow: hidden;
+    }
+}
